@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+   
+</head>
+<body>
+    <div class="container">
+    <!-- Header Section -->
+    <header>
+        <div id="intro"></div>
+
+<script>
+    const introText = "Tarek Salas";
+    let i = 0;
+
+    function typeWriter() {
+        if (i < introText.length) {
+            document.getElementById("intro").innerHTML += introText.charAt(i);
+            i++;
+            setTimeout(typeWriter, 100);
+        }
+    }
+
+    window.onload = typeWriter;
+</script>
+        <p>IT Professional | Tech Enthusiast  </p>
+    </header>
+  
+    <!-- Navigation Section -->
+    <nav id="navbar">
+        <a href="#about">About</a>
+        <a href="#portfolio">Certifications</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    
+    <!-- About Section -->
+   
+    <section id="about">
+        <div class="card">
+            <img src="images/fihondo.jpg" alt="profile"></svg>
+            <div class="card__content">
+              <p class="card__title">About me</p>
+              <p class="card__description">Accomplished IT Technician with a proven track record at BCBSLA, 
+                specializing in desktop and hardware support, alongside exceptional problem-solving abilities.
+                 Expert in enhancing user experiences and streamlining IT asset management, significantly improving operational efficiency.
+                  Known for outstanding teamwork and collaboration, consistently delivering solutions that exceed employer expectations.
+              </p>
+              <h3>Skills</h3>
+            </div>
+          </div>
+          
+    </section>
+    
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <h2 class="section-title">My Certifications</h2>
+        <div class="portfolio-item">
+            <div class="item">
+                <img src="images/download.png" alt="Project 1">
+                <h3>Apprenti Louisiana</h3>
+                <p>IT Support Professional- Apprenti Louisiana.</p>
+            </div>
+            <div class="item">
+                <img src="images/mta-badge.webp" alt="Project 2">
+                <h3>Microsoft MTa </h3>
+                <p>Microsoft Technology Associate.</p>
+            </div>
+            <div class="item">
+                <img src="images/aplus.webp" alt="Project 3">
+                <h3>ComptiA a+</h3>
+                <p>Computing Technology Industry Association.</p>
+            </div>
+            <div class="item">
+                <img src="images/google.png" alt="Project 3">
+                <h3>Google </h3>
+                <p>Google IT Support Professional Certificate.</p>
+            </div>
+            <div class="item">
+                <img src="images/workforce.webp" alt="Project 4">
+                <h3></h3>
+                <p>IT Generalist Certificate - Louisiana Workforce Commission.</p>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <p>emali: <span id="email"><button onclick="copyEmail()">tarekasalas@gmail.com</button></p></span>
+                </form>
+    </section>
+
+    
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Tarek Salas.</p>
+    </footer>
+  <script src="script.js"></script>
+</div>
+</body>
+</html>
+
+
+
